@@ -1,4 +1,4 @@
-from django_santa.settings import *
+from settings import *
 
 DEBUG = True
 
