@@ -1,1 +1,6 @@
 -e svn+http://code.djangoproject.com/svn/django/trunk/
+coverage==3.2b3
+nose
+git+git://github.com/cmheisel/nose-xcover.git#egg=nosexcover
+git+git://github.com/jbalogh/django-nose.git#egg=django-nose
+pylint

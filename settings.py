@@ -78,7 +78,7 @@ STATICFILES_DIRS = ()
 # List of finder classes that know how to find static files in
 # various locations.
 STATICFILES_FINDERS = (
-    'django.contrib.staticfiles.finders.FileSystemFinder',
+   'django.contrib.staticfiles.finders.FileSystemFinder',
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
 #    'django.contrib.staticfiles.finders.DefaultStorageFinder',
 )
@@ -109,13 +109,15 @@ TEMPLATE_DIRS = (
     # Don't forget to use absolute paths, not relative paths.
 )
 
-INSTALLED_APPS = (
+INSTALLED_APPS = (    
+    'django_santa',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.sites',
     'django.contrib.messages',
-    'django.contrib.staticfiles',
+    'django.contrib.staticfiles',    
+    'django_nose'
     # Uncomment the next line to enable the admin:
     # 'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:
@@ -143,4 +145,6 @@ LOGGING = {
             'propagate': True,
         },
     }
-}
+}       
+
+TEST_RUNNER = 'django_nose.NoseTestSuiteRunner'
